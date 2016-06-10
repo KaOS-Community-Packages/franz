@@ -12,7 +12,7 @@ sha256sums=('fce6efcaf265492eb9bf479795e49b2868114c157709acc849302a9520919ab2'
             '61b60fde3ef951e8f99b3deae992195994300b13da368cd999fc332c8023b0d1')
 
 package() {
-	cd "$srcdir/"	install -dm755 "$pkgdir/usr/bin"
+	install -dm755 "$pkgdir/usr/bin"
 	install -dm755 "$pkgdir/usr/share/$pkgname"
 	cp -r $srcdir/* $pkgdir/usr/share/$pkgname/
 	install -dm755 "$pkgdir/usr/bin"
