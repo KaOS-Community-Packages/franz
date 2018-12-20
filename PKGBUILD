@@ -1,8 +1,7 @@
 pkgname=franz
-_betarel=beta.18
-pkgver=5.0.0_$_betarel
-dlver=5.0.0-$_betarel
-pkgrel=1
+pkgver=5.0.0_beta.18
+dlver=5.0.0-beta.18
+pkgrel=2
 pkgdesc="A free messaging app for WhatsApp, Facebook Messenger, Telegram, Slack and more."
 arch=('x86_64')
 url="http://meetfranz.com/"
