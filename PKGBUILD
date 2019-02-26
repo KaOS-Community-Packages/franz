@@ -1,6 +1,5 @@
 pkgname=franz
-_extraver="beta.24"
-pkgver=5.0.0_${_extraver}
+pkgver=5.0.0_beta.24
 pkgrel=1
 pkgdesc="A free messaging app for WhatsApp, Facebook Messenger, Telegram, Slack and more."
 arch=('x86_64')
@@ -17,7 +16,7 @@ package() {
 	cp -r $srcdir/$pkgname-$dlver/* $pkgdir/opt/$pkgname/
 	install -dm755 "$pkgdir/usr/bin"
 	echo -en "#!/bin/bash\nexec /opt/$pkgname/franz $@"  >"$pkgdir/usr/bin/franz"
-    chmod +x  "$pkgdir/usr/bin/franz"
+	chmod +x  "$pkgdir/usr/bin/franz"
 	install -dm755 "$pkgdir/usr/share/pixmaps"
 	install -Dm644 "$srcdir/$pkgname.png" "$pkgdir/usr/share/icons/hicolor/256x256/apps/$pkgname.png"
 	install -dm755 "$pkgdir/usr/share/applications"
