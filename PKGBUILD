@@ -1,5 +1,5 @@
 pkgname=franz
-pkgver=5.1.0
+pkgver=5.2.0
 pkgrel=1
 pkgdesc="A free messaging app for WhatsApp, Facebook Messenger, Telegram, Slack and more."
 arch=('x86_64')
@@ -9,8 +9,7 @@ depends=('alsa-lib' 'gconf' 'gtk3' 'libnotify' 'libxtst' 'nss' 'python2' 'libxkb
 source=("$pkgname.desktop" "$pkgname.png" "https://github.com/meetfranz/${pkgname}/releases/download/v${pkgver}/${pkgname}-${pkgver}.tar.gz")
 sha256sums=('fce6efcaf265492eb9bf479795e49b2868114c157709acc849302a9520919ab2'
             '6e761371afadf155b8bc25e94fd7de371c16130a87338300e5800924916a7a28'
-            '77c9cb0b8a84e39c0b8fedc8b276d28ea46f668bb06c7d0e441ddc61a6f2cbcc')
-
+            '013fda342b474a71af16f313406f7f7cb83832c136cba3908a1ea23c58532ae6')
 package() {
 	install -dm755 "$pkgdir/opt/$pkgname"
 	cp -r $srcdir/$pkgname-$pkgver/* $pkgdir/opt/$pkgname/
